@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/f56d13fb4e.js" crossorigin="anonymous"></script>
+    <title>portfolio</title>
+</head>
+<body>
+    <section class="split-background">
+        <div class="main" id="home">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span></h2>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            <!-------I have turned this subscribe button field to comment because at the moment I have no use for it----->
+                <!------a href="#" class="btn">Subscribe</a------->
+            </nav>
+            <div class="content">
+                  <h4>Hello, My Name Is</h4>
+                  <h1 class="name">George <span>Onyango</span></h1>
+
+                  <h3>I am a Data Analyst</h3>
+                 
+                        <div class="quote-wrapper">
+                          <blockquote class="hero-quote">
+                            <div class="accent-line-vertical"></div>
+                            <span class="quote-mark">“</span>
+                            <p>
+                              There is <strong>DATA</strong> everywhere.<br>
+                              What matters is how you view and use it.
+                            </p>
+                          </blockquote>
+                        </div>
+
+            <!-------I have turned this form field to comment because at the moment I have no use for it----->
+                <!-----div class="newsletter">
+                    <form>
+                        <input type="email" name="user" id="mail" placeholder="Enter Email">
+                        <input type="submit" name="submit" id="submit" value="Lets Start">
+                    </form>
+                </div------->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+	<!--------About Section Start------->
+	<section class="about" id="about">
+  <div class="main2">
+    <img src="imgs/prog-think.jpg" alt="George Onyango working" class="about-img">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h5>Data Analyst <span> & Problem Solver</span></h5>
+      <p>
+        I specialize in transforming raw data into meaningful insights that drive decision-making. With a strong foundation in SQL, Excel, and data visualization tools, I clean, analyze, and present data in ways that are clear, actionable, and impactful. My goal is to help organizations unlock the full potential of their data.
+      </p>
+      <a class="btn" href="assets/Data Analytics Resume George.pdf" download class="cv-btn">
+        <i class="fa-solid fa-file-arrow-down"></i> Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+	<!-----------service section start----->
+	<section class="service" id="services">
+  <div class="our-services">
+    <h3>My Services</h3>
+  </div>
+  <div class="box">
+    <div class="card">
+      <i class="fa-solid fa-broom"></i> <!-- Data Cleaning -->
+      <h5>Data Cleaning</h5>
+      <div class="about-service">
+        <p>
+          Removing inconsistencies, handling missing values, and preparing datasets for analysis.
+        </p>
+        <p style="text-align: center;">
+              <a class="button read-more" href="#"
+                   data-title="Data Cleaning"
+                   data-description="In-depth data cleaning involves handling missing values, removing duplicates, standardizing formats, and ensuring consistency across datasets. This process is critical for accurate analysis and reliable insights, especially when working with large or messy data sources."
+                   data-image="modimgs/clean.png">
+                   Read More
+              </a>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-chart-column"></i> <!-- Data Visualization -->
+      <h5>Data Visualization</h5>
+      <div class="about-service">
+        <p>
+          Creating dashboards and charts using Power BI and Excel to communicate insights effectively.
+        </p>
+        <p style="text-align: center;">
+             <a class="button read-more" href="#"
+                 data-title="Data visualization"
+                 data-description="Data visualization is the art and science of turning raw numbers into clear, compelling stories. I use tools like Power BI and Excel to design dashboards that reveal trends, highlight KPIs, and guide strategic decisions. Whether it's uncovering hidden patterns or simplifying complex datasets, my visualizations help stakeholders see what matters most, instantly and intuitively."
+                 data-image="modimgs/visuals.png">
+                 Read More
+            </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-lightbulb"></i> <!-- Business Intelligence -->
+      <h5>Business Intelligence</h5>
+      <div class="about-service">
+        <p>
+          Analyzing trends, KPIs, and performance metrics to support strategic decisions.
+        </p>
+        <p style="text-align: center;">
+          <a class="button read-more" href="#"
+               data-title="Business Intelligence"
+               data-description="Business Intelligence (BI) transforms raw data into strategic insight. I specialize in building interactive dashboards and automated reports using tools like Power BI and Excel, helping teams make faster, smarter decisions. From tracking performance metrics to uncovering growth opportunities, my BI solutions turn complexity into clarity, empowering organizations to act with confidence."
+               data-image="modimgs/intelligence.png">
+               Read More
+           </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Window -->
+<div id="serviceModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Service Image" class="modal-img">
+    <div class="modal-text">
+      <h4 id="modalTitle"></h4>
+      <div id="modalDescription" class="animated-description"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Skills Section Start -->
+<section class="skills" id="skills">
+  <div class="skills-header">
+    <h3>My Skills</h3>
+    <p>Here are some of the tools and technologies I work with:</p>
+  </div>
+
+    <div class="skills-container">
+            <div class="skill-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <h5>Data Analysis</h5>
+              <p>Turning raw data into actionable insights for impact.</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <h5>SQL</h5>
+              <p>Data cleaning, query optimization, and dashboard integration.</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-file-excel"></i>
+              <h5>Excel</h5>
+              <p>Advanced formulas, pivot tables, and data visualization techniques.</p>
+            </div>
+
+            <div class="skill-card">
+          <i class="fa-solid fa-chart-pie"></i>
+          <h5>Power BI</h5>
+          <p>Building interactive dashboards and reports for business intelligence.</p>
+        </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-code"></i>
+              <h5>HTML & CSS</h5>
+              <p>Clean, responsive layouts and modern styling techniques.</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-brands fa-js-square"></i>
+              <h5>JavaScript</h5>
+              <p>Interactive features and dynamic content for web apps.</p>
+            </div>
+    </div>
+</section>
+
+
+<!-- Projects Section Start -->
+<section class="projects" id="projects">
+  <div class="projects-header">
+    <h3>My Projects</h3>
+        <p>Here are some of the recent works I've built and contributed to:</p>
+  </div>
+
+  <!-- Top Row -->
+  <!---The class of the project cards was changed from class="project-link" to class="btn" for consistency in styling of the website--->
+  <div class="projects-row top">
+    <div class="projects-track">
+      <div class="project-card">
+        <h4>Data Cleaning</h4>
+        <p>This project showcases the use of SQL to clean and prepare raw datasets for analysis.</p>
+        <button class="btn" onclick="openModal('datacleaning')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Data Dashboard</h4>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <button class="btn" onclick="openModal('dashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Finance Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('finacedashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Health Dashboard</h4>
+        <p>This project showcases the use of SQL to clean and prepare raw datasets for analysis.</p>
+        <button class="btn" onclick="openModal('healthdashboard')">View Project</button>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="project-card">
+        <h4>Data Cleaning</h4>
+        <p>This project showcases the use of SQL to clean and prepare raw datasets for analysis.</p>
+        <button class="btn" onclick="openModal('datacleaning')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Data Dashboard</h4>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <button class="btn" onclick="openModal('dashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Finance Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('finacedashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Health Dashboard</h4>
+        <p>This project showcases the use of SQL to clean and prepare raw datasets for analysis.</p>
+        <button class="btn" onclick="openModal('healthdashboard')">View Project</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="projects-row bottom">
+    <div class="projects-track">
+      <div class="project-card">
+        <h4>Suicide Dashboard</h4>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <button class="btn" onclick="openModal('suicidedashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Business Analytics</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('blinkitdashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Terrorism Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('terroristdashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>EV Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('evdashboard')">View Project</button>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="project-card">
+        <h4>Suicide Dashboard</h4>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <button class="btn" onclick="openModal('suicidedashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Business Analytics</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('blinkitdashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>Terrorism Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('terroristdashboard')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h4>EV Dashboard</h4>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <button class="btn" onclick="openModal('evdashboard')">View Project</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+	<!-----------Contact me section----->
+		
+<!-- Contact Section Start -->
+<section id="contact" class="contact-section">
+  <div class="email-wrapper">
+    <h3>Send Me a Message</h3>
+    <form action="https://formspree.io/f/mqalvkdn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="hire-wrapper">
+    <p>Let me analyze your data</p>
+    <a href="https://mail.google.com/mail/?view=cm&to=ochienggeorge1198@gmail.com&su=Job%20Offer&body=Dear%20George%2C%0AWe%20would%20like%20to%20offer%20you%20a%20position%20as%20a%20Data%20Analyst.%0ARegards%2C%0A[Your%20Name]" 
+   target="_blank" class="hire-btn">
+  💼 Hire Me
+</a>
+  </div>
+  
+</section>
+
+
+<!----------footer section-------------->
+<footer>
+	<p>George onyango</p>
+	<p>For more infomation regarding me, find the attached copy of my CV</p>
+	<div class="social">
+  <a href="https://wa.me/254748695617" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+	  </a>
+	  <a href="https://x.com/@Sammygy99" target="_blank">
+	  <i class="fa-brands fa-x-twitter"></i>
+	</a>
+  <a href="https://www.facebook.com/myusername" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/myusername" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+	<p class="end">Copy right by @onyango george</p>
+</footer>
+<!-- Modal Structure -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-body">
+      <!-- Dynamic content will be injected here -->
+    </div>
+  </div>
+</div>
+<script>
+  function openModal(project) {
+    const modal = document.getElementById("projectModal");
+    const body = document.getElementById("modal-body");
+
+    let content = "";
+
+    if (project === "datacleaning") {
+      content = `
+        <h2>SQL Data Cleaning Project</h2>
+        <p>This project showcases the use of SQL to clean and prepare raw datasets for analysis. It covers techniques like handling NULL values, standardizing formats, removing duplicates, and optimizing queries for clarity and performance.</p>
+        <img src="modimgs/clean.png" alt="Portfolio Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/portfolio" target="_blank">🔗 View on GitHub</a>
+      `;
+    } else if (project === "dashboard") {
+      content = `
+        <h2>Data Dashboard</h2>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <img src="modimgs/visualization.png" alt="Dashboard Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/dashboard" target="_blank">🔗 View on GitHub</a>
+      `;
+    } else if (project === "finacedashboard") {
+      content = `
+        <h2>PowerBI-Powered Finance Dashboard</h2>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <img src="modimgs/financepowBI.png" alt="Form Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/form-project" target="_blank">🔗 View on GitHub</a>
+      `;
+    }
+    else if (project === "healthdashboard") {
+      content = `
+        <h2>PowerBI-Powered Health Dashboard</h2>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <img src="modimgs/visualization.png" alt="Dashboard Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/dashboard" target="_blank">🔗 View on GitHub</a>
+      `;
+    } else if (project === "suicidedashboard") {
+      content = `
+        <h2>PowerBI-Powered Suicide Dashboard</h2>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <img src="modimgs/suicidedashbord.png" alt="Form Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/form-project" target="_blank">🔗 View on GitHub</a>
+      `;
+    }
+    else if (project === "blinkitdashboard") {
+      content = `
+        <h2>PowerBI-Powered Business Analytics Dashboard</h2>
+        <p>PowerBI-powered dashboard for visualizing key metrics and insights.</p>
+        <img src="modimgs/visualization.png" alt="Dashboard Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/dashboard" target="_blank">🔗 View on GitHub</a>
+      `;
+    } else if (project === "terroristdashboard") {
+      content = `
+        <h2>PowerBI-Powered Terrorism Dashboard</h2>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <img src="modimgs/transformation.png" alt="Form Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/form-project" target="_blank">🔗 View on GitHub</a>
+      `;
+    } else if (project === "evdashboard") {
+      content = `
+        <h2>PowerBI-Powered EV Dashboard</h2>
+        <p>Custom form with validation and Formspree integration for client inquiries.</p>
+        <img src="modimgs/transformation.png" alt="Form Screenshot" style="width:100%; margin-bottom:15px;">
+        <a href="https://github.com/yourusername/form-project" target="_blank">🔗 View on GitHub</a>
+      `;
+    }
+
+
+    body.innerHTML = content;
+    modal.style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("projectModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("projectModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script>
+  const modal = document.getElementById("serviceModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalImage = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".read-more").forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      // Set modal title and image
+      modalTitle.textContent = this.dataset.title;
+      modalImage.src = this.dataset.image;
+
+      // Clear previous description content
+      modalDescription.innerHTML = "";
+
+      // Split description into words and animate each
+      const words = this.dataset.description.split(" ");
+      let i = 0;
+
+      function flashWords() {
+        if (i < words.length) {
+          const span = document.createElement("span");
+          span.textContent = words[i] + " ";
+          span.style.opacity = 0;
+          modalDescription.appendChild(span);
+
+          setTimeout(() => {
+            span.style.transition = "opacity 0.3s ease-in";
+            span.style.opacity = 1;
+          }, 50);
+
+          i++;
+          setTimeout(flashWords, 100); // Speed of word reveal
+        }
+      }
+
+      flashWords();
+      modal.style.display = "block";
+    });
+  });
+
+  // Close modal on button click
+  closeBtn.onclick = () => modal.style.display = "none";
+
+  // Close modal on outside click
+  window.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  };
+
+</script>
+
+
+</body>
+</html>
